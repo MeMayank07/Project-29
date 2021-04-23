@@ -133,7 +133,7 @@ function draw() {
   stroke(15)
   fill("pink")
   blocks9.display();
-  text("drag the line and release to hit the crazy boxes",400,50)
+  text("drag the line and release to hit the crazy boxes",350,50)
  //imageMode(CENTER)
  //ball = loadImage(polygon_img ,ball.position.x-50,ball.position.y-80,40,40);
  // ellipseMode(RADIUS);
@@ -147,4 +147,10 @@ function mouseDragged(){
 
 function mouseReleased(){
   slingShot.fly();
+}
+
+function keyPressed(){
+  if(keyCode===32){
+      slingShot.attach(ball.Body);
+  }
 }
