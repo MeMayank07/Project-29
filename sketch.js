@@ -75,7 +75,7 @@ function setup() {
 
 function draw() {
  // background(backgroundImg);  
- background("white")
+ background("black")
   Engine.update(engine);
  
   
@@ -87,7 +87,7 @@ function draw() {
   stand2.display();
   
   stroke(15);
-  fill("black")
+  fill("cyan")
   block1.display();
   block2.display();
   block3.display();
@@ -133,7 +133,7 @@ function draw() {
   stroke(15)
   fill("pink")
   blocks9.display();
-  text("drag the line and release to hit the crazy boxes",600,250)
+  text("drag the line and release to hit the crazy boxes",400,50)
  //imageMode(CENTER)
  //ball = loadImage(polygon_img ,ball.position.x-50,ball.position.y-80,40,40);
  // ellipseMode(RADIUS);
